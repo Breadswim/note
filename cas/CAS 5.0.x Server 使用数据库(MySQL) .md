@@ -57,8 +57,6 @@
 
   ![Screen Shot 2016-12-13 at 15.34.54](https://cdn.rawgit.com/Evilspirits/note/master/cas/img/Screen Shot 2016-12-13 at 15.34.54.png)
 
-  ​
-
 - 修改POM.xml 
 
   ```xml
@@ -84,7 +82,7 @@
   5. Microsoft SQL Server (JTDS)
   6. Sybase
 
-- sudo ./build.sh copy复制配置文件到/etc/cas，打开/etc/cas/config/cas.properties，使用以下配置
+- `sudo ./build.sh copy`复制配置文件到/etc/cas，打开/etc/cas/config/cas.properties，使用以下配置
 
   ```properties
   cas.server.name: https://localhost:8443
@@ -130,8 +128,6 @@
   ![Screen Shot 2016-12-13 at 16.04.58](https://cdn.rawgit.com/Evilspirits/note/master/cas/img/Screen Shot 2016-12-13 at 16.04.58.png)
 
   ​
-
-
 
 
 
