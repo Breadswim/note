@@ -45,7 +45,9 @@
 
 可以使用 [https://localhost:8443](https://localhost:8443) 访问Tomcat。
 
-![](https://cdn.rawgit.com/Evilspirits/note/master/cas/img/Screen Shot 2016-12-13 at 16.09.41.png)
+![](img/Screen Shot 2016-12-13 at 16.09.41.png)
+
+
 
 
 
@@ -55,7 +57,7 @@
 
 - 在cas-overlay-template下运行build.sh build会生成target/cas.war，把cas.war复制到tomcat/webapp目录，启动tomcat. 访问[https://localhost:8443/cas/login](https://localhost:8443/cas/login) 使用默认`casuser/Mellon`登录。
 
-  ![Screen Shot 2016-12-13 at 15.34.54](https://cdn.rawgit.com/Evilspirits/note/master/cas/img/Screen Shot 2016-12-13 at 15.34.54.png)
+  ![Screen Shot 2016-12-13 at 15.34.54](img/Screen Shot 2016-12-13 at 15.34.54.png)
 
 - 修改POM.xml 
 
@@ -123,9 +125,9 @@
 
 - 重新编译运行cas-overlay-template，使用`admin/123`登录[https://localhost:8443/cas/login](https://localhost:8443/cas/login)。
 
-  ![Screen Shot 2016-12-13 at 16.04.37](https://cdn.rawgit.com/Evilspirits/note/master/cas/img/Screen Shot 2016-12-13 at 16.04.37.png)
+  ![Screen Shot 2016-12-13 at 16.04.37](img/Screen Shot 2016-12-13 at 16.04.37.png)
 
-  ![Screen Shot 2016-12-13 at 16.04.58](https://cdn.rawgit.com/Evilspirits/note/master/cas/img/Screen Shot 2016-12-13 at 16.04.58.png)
+  ![Screen Shot 2016-12-13 at 16.04.58](img/Screen Shot 2016-12-13 at 16.04.58.png)
 
   ​
 
