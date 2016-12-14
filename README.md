@@ -5,7 +5,7 @@
 
 [CAS 5.0.x Server 使用数据库MySQL进行用户认证](cas/CAS 5.0.x Server 使用数据库MySQL进行用户认证.md)
 
-
+[CAS4.2.x配置数据库进行用户认证](cas/CAS4.2.x配置数据库进行用户认证.md)
 
 
 

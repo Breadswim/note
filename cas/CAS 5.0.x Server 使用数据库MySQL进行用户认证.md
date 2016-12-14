@@ -1,6 +1,6 @@
 # CAS 5.0.x Server 使用数据库(MySQL)进行用户认证
 
-> Jasing CAS 5.0.x配置有较大变化，结合官方文档做个简单的配置。
+> Jasing CAS 5.0.x，结合官方文档做个简单的配置。
 
 ## 准备工作
 
@@ -47,9 +47,19 @@
 
 ![](img/Screen Shot 2016-12-13 at 16.09.41.png)
 
+- 初始化数据库MySQL
 
-
-
+  ```mysql
+  create database shiro;
+  CREATE TABLE app_user (
+    username varchar(200) NOT NULL,
+    password varchar(512) DEFAULT NULL,
+    PRIMARY KEY (username),
+    UNIQUE KEY loginUser_username_uindex (username)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  INSERT INTO cas.app_user (username, password) VALUES ('admin', '123');
+  INSERT INTO cas.app_user (username, password) VALUES ('test', '123');
+  ```
 
 ## 配置CAS服务器端
 
@@ -109,20 +119,6 @@
   cas.authn.accept.users=
   ```
 
-- 初始化数据库MySQL
-
-  ```mysql
-  create database shiro;
-  CREATE TABLE app_user (
-    username varchar(200) NOT NULL,
-    password varchar(512) DEFAULT NULL,
-    PRIMARY KEY (username),
-    UNIQUE KEY loginUser_username_uindex (username)
-  ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-  INSERT INTO cas.app_user (username, password) VALUES ('admin', '123');
-  INSERT INTO cas.app_user (username, password) VALUES ('test', '123');
-  ```
-
 - 重新编译运行cas-overlay-template，使用`admin/123`登录[https://localhost:8443/cas/login](https://localhost:8443/cas/login)。
 
   ![Screen Shot 2016-12-13 at 16.04.37](img/Screen Shot 2016-12-13 at 16.04.37.png)
@@ -130,6 +126,7 @@
   ![Screen Shot 2016-12-13 at 16.04.58](img/Screen Shot 2016-12-13 at 16.04.58.png)
 
   ​
+
 
 
 
