@@ -1,6 +1,6 @@
-> Jasing CAS 4.2.x, 使用MySQL认证，源码github地址：[Jasing CAS 4.2.x](https://github.com/apereo/cas-overlay-template/tree/4.2)
+> [Jasing CAS 4.2.x](https://github.com/apereo/cas-overlay-template/tree/4.2) 使用MySQL进行用户认证.
 >
-> 官方文档[Database Authenticaation](https://apereo.github.io/cas/4.2.x/installation/Database-Authentication.html)
+> 官方文档[Database Authentication](https://apereo.github.io/cas/4.2.x/installation/Database-Authentication.html)
 
 ## 准备工作
 
@@ -24,7 +24,7 @@
   <version>5.1.25</version>
 </dependency>
 ```
-## 连接池样例
+## 连接池配置
 
 - 在cas/WEB-INF/deployerConfigContext.xml中添加dataSource
 
@@ -102,3 +102,4 @@ database.pool.acquireRetryDelay=2000
 
 cas.jdbc.authn.query.sql=select password from app_user where username=?
 ```
+重新启动容器，不报错即可使用数据库中数据进行认证。
