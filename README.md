@@ -3,7 +3,7 @@
 
 ## CAS
 
-[CAS 5.0.x Server 使用数据库MySQL](cas/CAS 5.0.x Server 使用数据库MySQL.md)
+[CAS 5.0.x Server 使用数据库MySQL进行用户认证](cas/CAS 5.0.x Server 使用数据库MySQL进行用户认证.md)
 
 
 
