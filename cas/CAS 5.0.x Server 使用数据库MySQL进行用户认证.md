@@ -1,4 +1,4 @@
-# CAS 5.0.x Server 使用数据库(MySQL)
+# CAS 5.0.x Server 使用数据库(MySQL)进行用户认证
 
 > Jasing CAS 5.0.x配置有较大变化，结合官方文档做个简单的配置。
 
