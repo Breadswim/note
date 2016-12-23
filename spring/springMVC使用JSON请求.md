@@ -1,6 +1,6 @@
 # springMVC处理JSON请求
 
-1. 添加jar包依赖
+## 添加jar包依赖
 
 ```xml
 <dependency>
@@ -15,9 +15,7 @@
 </dependency>
 ```
 
-
-
-2. Controller
+## Controller
 
 ```java
 /**
@@ -44,9 +42,7 @@ public @ResponseBody ItemsCustom responseJson(ItemsCustom itemsCustom){
 }
 ```
 
-
-
-3. 前台jsp 
+## 前台jsp 
 
 ```jsp
 //请求json，输出是json
@@ -77,7 +73,7 @@ public @ResponseBody ItemsCustom responseJson(ItemsCustom itemsCustom){
         }
 ```
 
-4. 测试截图
+##测试截图
 
 ![](img/jsonrequest.png)
 
