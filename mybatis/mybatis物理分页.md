@@ -321,6 +321,15 @@ public class PaginationStatementInterceptor implements Interceptor {
 </select>
 ```
 
+### MyBatis配置文件
+
+```xml
+<plugins>
+    <plugin interceptor="com.PaginationStatementInterceptor">
+        <property name="databaseType" value="oracle" />
+    </plugin>
+</plugins>
+```
 ### 测试
 
 ```java
