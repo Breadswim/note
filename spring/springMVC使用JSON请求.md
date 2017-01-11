@@ -83,3 +83,17 @@ public @ResponseBody ItemsCustom responseJson(ItemsCustom itemsCustom){
 
 
 
+## 如果Controller 返回的是String 类型，并且请求能到服务器，但是服务器返回的数据不能被ajax success方法接收，去掉ajax请求的参数 dataType:'json'可解决。
+
+## Ajax 返回中文乱码问题, 使用StringHttpMessageConverter可解决。
+
+```xml
+<mvc:annotation-driven>
+   <!-- utf-8编码 -->
+   <mvc:message-converters register-defaults="true">
+      <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+         <constructor-arg value="UTF-8" />
+      </bean>
+   </mvc:message-converters>
+</mvc:annotation-driven>
+```
